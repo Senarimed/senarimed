@@ -1,0 +1,30 @@
+.highlight{
+    size: 2em;
+    color: blueviolet;
+}
+#id{
+    background-color: rgb(10, 19, 19);
+}
+button{
+    padding: 10px
+
+}
+
+button:hover{
+    background-color: cornflowerblue;
+    color: blanchedalmond;
+    border: dashed;
+}
+button{
+    font-style: italic;
+    color: blueviolet;
+    margin: 10%;
+    padding: 3%;
+    border-radius: 30%;
+
+
+}
+
+.mor{
+    color: purple;
+}
