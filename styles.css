@@ -1,0 +1,345 @@
+/* RESET CSS START */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Playfair Display", serif;
+}
+
+:root {
+    --color-bg: #FAFAFA;
+    --color-bg-secondary: #E5E7EB;
+    --color-text: #1E1E1E;
+    --color-accent-blue: #1458c5;
+    --color-accent-green: #0cbda8;
+    --color-accent-purple: #c826dd;
+  }
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+span{
+    color: var(--color-text);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 5% 10rem;
+}
+/* RESET CSS END */
+
+/* HEADER START */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 10rem 4rem;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--color-text);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo span{
+    text-shadow: 0 0 25px var(--color-accent-purple);
+    color: var(--color-accent-purple);
+}
+
+.navbar a{
+    font-size: 2rem;
+    color: var(--color-accent-blue);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    color: var(--color-accent-purple);
+}
+
+#menu-icon{
+    font-size: 3rem;
+    color: var(--color-accent-purple);
+    display: none;
+}
+/* HEADER END */
+
+/* HOME START */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.home-content h1{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-content p3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+    margin-top: 3rem;
+    max-width: 800px;
+
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    width: 24vw;
+    position: relative;
+    border-radius: 50%;
+    top: 3rem;
+}
+
+.home-content p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.home-content p1{ 
+    margin-top: 1.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.home-content p2{
+    margin-top: 1.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 2px solid var(--color-accent-purple);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--color-accent-purple);
+    color: var(--color-accent-purple);
+    margin: 3rem 4rem 3rem 0;
+    transition: 300ms ease-in-out;
+}
+
+.social-icons a:hover{
+    color: var(--color-bg);
+    transform: scale(1.15);
+    transition: 300ms ease-in-out;
+    box-shadow: 0 0 25px var(--color-accent-purple);
+    background-color: var(--color-accent-purple);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--color-accent-purple);
+    box-shadow: 0 0 25px var(--color-accent-purple);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--color-bg);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--color-accent-purple);
+}
+/* HOME END */
+
+/* EDUCATION START */
+.education{
+    background-color: var(--color-bg);
+    align-items: baseline;
+    margin-left: 2rem;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: left;
+    margin: 5rem 0;
+    font-weight: 600;
+}
+
+.lesson-groupes{
+    min-width: 350px;
+    max-width: 350px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+
+}
+
+.lesson-group{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.term{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 6px 0 3px;
+}
+
+.lesson{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 6px 0 3px;
+    margin-bottom: 8px;
+}
+
+.content-box{
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-accent-purple);
+    border: 3px solid var(--color-accent-purple);
+    border-radius: 1rem;
+    box-shadow/: 0 0 10px var(--color-accent-purple); /*finaldeki revizeden sonra kodları çalıştıracağım */
+    cursor: pointer/;
+    transition/: 0.4s ease-in-out;
+}
+
+.content-box:hover/{ /*finaldeki revizeden sonra kodu çalıştıracağım */
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    border: 3px;
+    transform: scale(1.03);
+    box-shadow: 0 0 40px var(--color-accent-purple);
+}
+
+.content-box .content-info{
+    padding: 2rem 2rem 2rem 2rem;
+    margin: auto;
+    align-items: baseline;
+    text-align: left;
+    font-size: 12px;
+}
+
+.content-box .box-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box .box-img img{
+    width: 100%;
+    height: 100%;   
+    object-fit: contain;
+}
+/* EDUCATION END */
+
+/* TECHNİCAL-SKILLS START */
+.technical-skills{
+    background-color: var(--color-bg);
+    align-items: baseline;
+    margin-left: 2rem;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: left;
+    margin: 5rem 0;
+    font-weight: 600;
+}
+
+.skill-boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.skill-box{
+    width: 250px;
+    height: 50px;
+    background-color: var(--color-accent-purple);
+    border: 3px solid var(--color-accent-purple);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 40px 20px 0px;
+    
+}
+
+.skill{
+    font-size: 21px;
+    margin: auto;
+}
+
+.skill-level{
+    font-size: 15px;
+    margin: auto;
+}
+/* TECHNİCAL-SKILLS END */
+
+/* HOBBIES START */
+/* HOBBIES END */
+
+/* DAIRY START */
+/* DAIRY END */
+
+/* CONTANT START */
+/* CONTANT END */
